@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Урок 2 Формы</title>
+</head>
+<body>
+<header>
+    <h1>Урок "Формы": теги и их атрибуты</h1>
+    <h2>рассакажите немного о себе...</h2>
+
+<p>Попробуйте создать анатогичную форму.Для целей демонстрации вполне подойдёт и вымышленая</p>
+</header>
+<fieldset>
+    <legend><b>Коротко о себе</b></legend>
+    <form action="index.html" method="post">
+       <br> <label>Имя <input type="text" name="name"> </label><br>
+        <p><label>Фамилия <input type="text" name="lastname"></label><br>
+         <br><span>Пол:</span>
+        <label>мужской <input type="radio" name="m" value="m"></label>
+        <label>женский <input type="radio" name="w" value="w"></label><br>
+        <p><label>Возраст<input type="number" name="old" min="0"> лет</label>
+        </form>
+ </fieldset><br><br>
+<fieldset>
+    <legend><b>Подробнее о себе</b></legend>
+    <form action="index.html" method="post">
+        <br><label> <input type="radio" name="yangm" value="yangm"> Молодой человек</label><br>
+        <label> <input type="radio" name="yangw" value="yangw"> Девушка</label><br>
+
+        <br><label> <input type="date" name="databorn"> Дата рождения </label><br>
+        <label> <input type="text" name="sp"> Семейное положение </label><br>
+        <label> <input type="text" name="social"> Социальній статус </label><br>
+        <label> <input type="text" name="sity"> Место жительство </label><br>
+
+        <p><b>Что вы обычно делаете на выходных?</b></p>
+       <label> <input type="checkbox" name="sleep" value="sleep">Сплю<Br></label>
+       <label> <input type="checkbox" name="friend" value="friend">Гуляю с друзьями<Br></label>
+       <label> <input type="checkbox" name="fishing" value="fishing">Хожу на рыбалку<Br></label>
+       <label> <input type="checkbox" name="play to game" value="play to game">Играю в игры<Br></label>
+
+        <p><b>Расказать о формах в книге, посвященной HTML: </p>
+        <label> <select name="book">
+            <option value="html Для чайников">html Для чайников</option>
+            <option value="html Для новичков">html Для новичков</option>
+            <option value="html Для людей">html Для людей</option>
+            <option value="html Для нелюдей">html Для нелюдей</option>
+    </select> </label>
+
+        <br><p><b>Сколько книг вы прочитали за свою жизнь:</b></p>
+        <label> <input type="radio" name="0-10">0-10</label><br>
+        <label><input type="radio" name="11-20">11-20 </label><br>
+        <label><input type="radio" name="21-50">21-50 </label><br>
+        <label><input type="radio" name="50+">50+ </label><br>
+        <br><label><b>Ваш коминтарий:</b><br>
+        <textarea name="comment"rows="5" cols="50"></textarea></label><br>
+
+        <br> <label> <select name="book" multiple size="3">
+                    <option value="Первая позиция">Первая позиция</option>
+                    <option value="Вторая позиция" >Вторая позиция</option>
+                    <option value="Третья позиция">Третья позиция</option>
+        </select>
+        </label>
+
+    </form>
+</fieldset><br><br>
+<fieldset>
+    <legend><b>И в заключении</b></legend>
+    <form action="index.html" method="post">
+    <br><label><input type="text" placeholder="Это поле было введено до вас"></label><br>
+    <p><b>Email</b></p>
+    <label><input type="email" name="email"> </label>
+    <p><b>Хотите подписатся на самую продвинутую рассілку спама</b></p>
+
+    <p><em>Виберите категории</em></p><br>
+    <label> <input type="checkbox" name="oborud" value="sleep">Оборудование<Br></label>
+    <label> <input type="checkbox" name="obedu" value="friend">Как приготовить обеди<Br></label>
+    <label> <input type="checkbox" name="million" value="fishing">Заработать миллион за два дня!<Br></label><br>
+    <p><b>Насколько сложная задача:</b></p><br>
+    <label><input type="radio" name="no" checked>Совсем нет</label><br>
+    <label><input type="radio" name="yas" >Так себе</label><br>
+    <label><input type="radio" name="hard" >Еле справился</label>
+        </form>
+</fieldset>
+<footer>
+<br><input type="submit" name="Отправить">
+</footer>
+</body>
+</html>
